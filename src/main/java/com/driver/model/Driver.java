@@ -21,6 +21,7 @@ public class Driver {
 
 
     @OneToMany(mappedBy = "driver",cascade = CascadeType.ALL)
+    @JsonIgnore
     private List<TripBooking> tripBookingList;
 
     public Driver() {
