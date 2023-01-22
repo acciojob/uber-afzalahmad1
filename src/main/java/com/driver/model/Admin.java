@@ -10,15 +10,15 @@ public class Admin {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int adminId;
-    private String userName;
+    private String Username;
     private String password;
     public Admin(){
 
     }
 
-    public Admin(int adminId, String userName, String password) {
+    public Admin(int adminId, String Username, String password) {
         this.adminId = adminId;
-        this.userName = userName;
+        this.Username = Username;
         this.password = password;
     }
 
@@ -30,12 +30,12 @@ public class Admin {
         this.adminId = adminId;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return Username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String userName) {
+        this.Username = Username;
     }
 
     public String getPassword() {
